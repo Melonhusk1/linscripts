@@ -1,7 +1,5 @@
 #! /bin/bash
 
-# uniquement pour apprendre
-
 menu_choice=""
 enum_submenu="./enum.sh"
 bruteforce_submenu="./bruteforce.sh"
