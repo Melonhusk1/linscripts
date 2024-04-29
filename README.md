@@ -1,3 +1,3 @@
 # linscripts
 
-only scripts made on pro use for optimization or patch
+only scripts made on pro or projects, for optimization or patch
