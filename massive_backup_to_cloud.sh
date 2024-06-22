@@ -30,7 +30,7 @@ while getopts "hHlo:v-:" option; do
         case $OPTARG in
             list ) option=l
             ;;
-            output ) option=o 
+            output ) option=o
             ;;
             host ) option=H
             ;;
@@ -49,7 +49,7 @@ while getopts "hHlo:v-:" option; do
         ;;
         o ) echo -e "option o // output logs to a file = $OPTARG"
         ;;
-        H ) echo -e "option h // select hostname of workstation to backup"
+        H ) echo -e "option H // select hostname of workstation to backup"
         ;;
 
         h ) echo -e "${blanc_bleu}Syntaxe : $(basename $0) [ option... ]${neutre}"
@@ -57,8 +57,8 @@ while getopts "hHlo:v-:" option; do
             echo -e "${blanc_bleu}-v --version : Print version${neutre}"
             echo -e "${blanc_bleu}-h : Print help Screen${neutre}"
             echo -e "${blanc_bleu}-H [hostname] [dest_path] : select an oly workstation to backup to img${neutre}"
-            echo -e "${blanc_bleu}-o [ path ... ] ${neutre}"
-            echo -e "${blanc_bleu}-l [file.txt] : select a file for input list of workstations (1 per line)${neutre}"
+            echo -e "${blanc_bleu}-o [ /full/path ... ] ${neutre}"
+            echo -e "${blanc_bleu}-l [/full/path/file.txt] : select a file for input list of workstations (1 per line)${neutre}"
         ;;
         v ) echo -e "${vert}Version : $(basename $0) $version ${neutre}"
         ;;
