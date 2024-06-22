@@ -24,7 +24,7 @@ my_date=$(date +"%d-%m_%H:%M:%S")
 version=1.0
 OPTERR=0
 
-while getopts "hHlo:v-:" option; do
+while getopts "hHlo:vV-:" option; do
 
     if [ "$option" = "-" ]; then
         case $OPTARG in
@@ -60,7 +60,9 @@ while getopts "hHlo:v-:" option; do
             echo -e "${blanc_bleu}-o [ /full/path ... ] ${neutre}"
             echo -e "${blanc_bleu}-l [/full/path/file.txt] : select a file for input list of workstations (1 per line)${neutre}"
         ;;
-        v ) echo -e "${vert}Version : $(basename $0) $version ${neutre}"
+        v ) écho -e "mode verbose (logs in the current shell)"
+        ;;
+        V ) echo -e "${vert}Version : $(basename $0) $version ${neutre}"
         ;;
         ? ) echo -e "${rouge}Option $OPTARG not known ${neutre}"
         ;;
