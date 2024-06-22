@@ -1,6 +1,9 @@
 #! /bin/Bash
 
-#core fonctions
+# core vars
+
+
+# core fonctions
 
 function_list(){
 #code
