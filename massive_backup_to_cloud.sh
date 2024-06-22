@@ -59,9 +59,10 @@ while getopts "hHlo:vV-:" option; do
             echo -e "${blanc_bleu}-h : Print help Screen${neutre}"
             echo -e "${blanc_bleu}-H [hostname] [dest_path] : select an oly workstation to backup to img${neutre}"
             echo -e "${blanc_bleu}-o [ /full/path ... ] ${neutre}"
-            echo -e "${blanc_bleu}-l [/full/path/file.txt] : select a file for input list of workstations (1 per line)${neutre}"
+            echo -e "${blanc_bleu}-l [ /full/path/file.txt ] : select a file for input list of workstations (1 per line)${neutre}"
         ;;
         v ) écho -e "mode verbose (logs in the current shell)"
+
         ;;
         V ) echo -e "${vert}Version : $(basename $0) $version ${neutre}"
         ;;
