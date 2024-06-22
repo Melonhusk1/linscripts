@@ -36,14 +36,16 @@ while getopts "hHlo:vV-:" option; do
             ;;
             help ) option=h
             ;;
-            
+            verbose ) option=v
+            ;;
+            version ) option=V
+            ;;
             : ) echo -e "${rouge}Option $OPTARG not set${neutre}"
             ;;
             * ) echo -e "${rouge}Option $OPTARG not known${neutre}"
             ;;
         esac
     fi
-    echo -e "${vert}Analyse argument numéro $OPTIND : ${neutre}"
     case "$option" in 
         l ) echo -e "option l // select list of server to backup"
         ;;
@@ -51,7 +53,6 @@ while getopts "hHlo:vV-:" option; do
         ;;
         H ) echo -e "option H // select hostname of workstation to backup"
         ;;
-
         h ) echo -e "${blanc_bleu}Syntaxe : $(basename $0) [ option... ]${neutre}"
             echo -e "${blanc_bleu}Options : ${neutre}"
             echo -e "${blanc_bleu}-v --version : Print version${neutre}"
