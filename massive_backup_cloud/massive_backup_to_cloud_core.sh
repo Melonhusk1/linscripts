@@ -6,7 +6,7 @@ function_list(){
 #code
 }
 
-function_verbose(){
+function_output(){
 #code
 }
 
@@ -14,3 +14,6 @@ function_host(){
 #code
 }
 
+function_verbose(){
+#code
+}
